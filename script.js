@@ -2,7 +2,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all functionality
     initMobileNav();
-    initContactForm();
     initAnimatedCounters();
     initSmoothScrolling();
     initScrollEffects();
@@ -19,121 +18,6 @@ function initMobileNav() {
             hamburger.classList.toggle('active');
         });
     }
-}
-
-// Contact Form Handling
-function initContactForm() {
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-            
-            // Basic validation
-            if (!name || !email || !message) {
-                showNotification('Please fill in all required fields.', 'error');
-                return;
-            }
-            
-            if (!isValidEmail(email)) {
-                showNotification('Please enter a valid email address.', 'error');
-                return;
-            }
-            
-            // Simulate form submission
-            showNotification('Sending message...', 'info');
-            
-            setTimeout(() => {
-                // Reset form
-                contactForm.reset();
-                showNotification('Thank you! Your message has been sent successfully.', 'success');
-            }, 2000);
-        });
-    }
-}
-
-// Email validation
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Show notification
-function showNotification(message, type = 'info') {
-    // Remove existing notifications
-    const existingNotification = document.querySelector('.notification');
-    if (existingNotification) {
-        existingNotification.remove();
-    }
-    
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.innerHTML = `
-        <span class="notification-message">${message}</span>
-        <button class="notification-close">&times;</button>
-    `;
-    
-    // Add styles
-    notification.style.cssText = `
-        position: fixed;
-        top: 90px;
-        right: 20px;
-        padding: 15px 20px;
-        border-radius: 8px;
-        color: white;
-        font-weight: 500;
-        z-index: 1001;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        min-width: 300px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        animation: slideInRight 0.3s ease;
-    `;
-    
-    // Set background color based on type
-    const colors = {
-        success: '#28a745',
-        error: '#dc3545',
-        info: '#17a2b8'
-    };
-    notification.style.backgroundColor = colors[type] || colors.info;
-    
-    // Add close button styles
-    const closeBtn = notification.querySelector('.notification-close');
-    closeBtn.style.cssText = `
-        background: none;
-        border: none;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-        padding: 0;
-        margin-left: auto;
-    `;
-    
-    // Add to page
-    document.body.appendChild(notification);
-    
-    // Close button functionality
-    closeBtn.addEventListener('click', () => {
-        notification.remove();
-    });
-    
-    // Auto-remove after 5 seconds
-    setTimeout(() => {
-        if (notification.parentNode) {
-            notification.style.animation = 'slideOutRight 0.3s ease';
-            setTimeout(() => notification.remove(), 300);
-        }
-    }, 5000);
 }
 
 // Animated Counters
