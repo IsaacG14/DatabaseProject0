@@ -303,13 +303,13 @@ style.textContent = `
         box-shadow: 0 1px 4px rgba(0,0,0,0.15);
     }
 
-    /* Hamburger menu color when active (yellow) on mobile */
+    /* Hamburger menu color when active (white) on mobile */
     @media (max-width: 900px) {
         .hamburger span {
-            background: #FFD600 !important;
+            background: #ffffffff !important;
         }
         .hamburger.active span {
-            background: #FFD600 !important;
+            background: #ffffffff !important;
         }
     }
 `;
