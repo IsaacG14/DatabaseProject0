@@ -1,4 +1,4 @@
-# MyWebsite - 3-Page Website Project
+# Project 0: Three-Page Website Project
 
 A modern, responsive website built with HTML, CSS, and JavaScript featuring three main pages: Home, About, and Contact.
 
@@ -13,37 +13,29 @@ A modern, responsive website built with HTML, CSS, and JavaScript featuring thre
 ### Interactive Elements
 - **Animated Counters**: Statistics that animate when scrolled into view
 - **Smooth Scrolling**: Seamless navigation between page sections
-- **Form Validation**: Contact form with real-time validation and notifications
 - **Hover Effects**: Interactive elements with smooth transitions
 - **Mobile Navigation**: Hamburger menu for mobile devices
 
 ### Pages
 
 #### 🏠 Home Page (`index.html`)
-- Hero section with call-to-action
-- Feature showcase with icons
-- Company highlights
-- Call-to-action section
+- Hero section
+- Team member bios
 
 #### ℹ️ About Page (`about.html`)
-- Company story and mission
-- Core values
-- Team member profiles
+- Project description 
+- Links to relevant pages
+- Team member roles
 - Animated statistics
 
 #### 📞 Contact Page (`contact.html`)
-- Contact form with validation
-- Company contact information
-- Business hours
-- Location placeholder
+- Member contact information
 
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup and structure
 - **CSS3**: Modern styling with Flexbox, Grid, and animations
-- **JavaScript (ES6+)**: Interactive functionality and form handling
-- **Responsive Design**: Mobile-first approach
-- **CSS Animations**: Smooth transitions and keyframe animations
+- **JavaScript (ES6+)**: Interactive functionality
 
 ## 📁 Project Structure
 
@@ -76,11 +68,10 @@ MyWebsite/
 
 ## 🎨 Customization
 
-### Colors
-The website uses a modern color palette with gradients:
-- Primary: Blue gradient (`#667eea` to `#764ba2`)
-- Secondary: Red gradient (`#ff6b6b` to `#ee5a24`)
-- Accent: Pink gradient (`#f093fb` to `#f5576c`)
+### Colors:
+- Primary: #0f9952;
+- Primary Light: #58c78d;
+- Primary Dark: #0a522f;
 
 ### Typography
 - Font Family: Segoe UI (with fallbacks)
@@ -92,13 +83,6 @@ The website uses a modern color palette with gradients:
 - Responsive grid systems
 - Mobile-first approach
 
-## 📱 Responsive Breakpoints
-
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: 480px - 767px
-- **Small Mobile**: Below 480px
-
 ## 🔧 JavaScript Features
 
 ### Core Functions
@@ -108,45 +92,11 @@ The website uses a modern color palette with gradients:
 - `initSmoothScrolling()`: Smooth page navigation
 - `initScrollEffects()`: Scroll-based animations
 
-### Form Validation
-- Required field checking
-- Email format validation
-- Success/error notifications
-- Form submission simulation
-
 ### Animations
 - Intersection Observer API for scroll animations
 - CSS keyframe animations
 - Smooth transitions
 - Hover effects
-
-## 🌟 Browser Support
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
-## 📝 Usage Examples
-
-### Adding New Pages
-1. Create a new HTML file
-2. Copy the header and footer structure
-3. Update navigation links
-4. Add your content
-5. Link to `styles.css` and `script.js`
-
-### Customizing Styles
-1. Modify `styles.css` for visual changes
-2. Update color variables for theme changes
-3. Adjust breakpoints for responsive design
-4. Add new CSS classes as needed
-
-### Adding JavaScript Functionality
-1. Extend `script.js` with new functions
-2. Use the existing event listener structure
-3. Follow the established naming conventions
-4. Test across different devices
 
 ## 🚀 Deployment
 
@@ -167,39 +117,10 @@ npx serve .
 php -S localhost:8000
 ```
 
-## 🤝 Contributing
-
-1. Fork the project
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🆘 Support
-
-If you encounter any issues or have questions:
-1. Check the browser console for errors
-2. Verify all files are in the same directory
-3. Ensure your browser supports ES6+ features
-4. Check that all file paths are correct
-
-## 🔮 Future Enhancements
-
-- [ ] Add more interactive elements
-- [ ] Implement dark mode toggle
-- [ ] Add image galleries
-- [ ] Integrate with backend services
-- [ ] Add more animation effects
-- [ ] Implement search functionality
-- [ ] Add blog section
-- [ ] Multi-language support
-
 ---
 
-**Built with ❤️ using HTML, CSS, and JavaScript**
-
-*Last updated: December 2024*
+*Last updated: September 2025*
