@@ -172,6 +172,16 @@ main {
     margin-bottom: 1rem;
 }
 
+.feature-icon img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 .feature-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
